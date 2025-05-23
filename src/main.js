@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Функция для обработки сообщений
   const handleMessage = (event) => {
     if (event.origin !== "https://philipp-moriss.github.io") return;
     if (event.data?.type === "payment-success") {
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Добавляем обработчик
   window.addEventListener("message", handleMessage);
 
   // Отправляем инициализацию после загрузки фрейма
