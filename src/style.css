@@ -59,14 +59,3 @@ h1 {
 #payment-frame:focus {
   box-shadow: 0 0 0 3px #646cff55;
 }
-
-@media (max-width: 600px) {
-  .iframe-container {
-    padding: 4px;
-  }
-  #payment-frame {
-    min-width: 0;
-    min-height: 200px;
-    border-radius: 8px;
-  }
-}
